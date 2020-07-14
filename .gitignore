@@ -1,0 +1,24 @@
+# Ignore files that should not be committed.
+
+# Ignore npm and bower modules. These should be created by yarn/npm and bower.
+node_modules/
+bower_components/
+
+# Filenames should NOT have spaces
+* *
+
+# Ignore byte-compiled / optimised / DLL files
+__pycache__/
+*.py[cod]
+
+
+# Unit test
+.pytest_cache/
+
+# Sublime-text workspaces, etc
+*.sublime-*
+.vscode/
+*.pdf
+
+# IPython Notebook checkpoints
+.ipynb_checkpoints

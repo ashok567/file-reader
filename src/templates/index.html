@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4"><i>{{title}} Content</i></h1>
+    {% if not error %}
+        {% if lines|length > 0 %}
+            {% for line in lines %}
+                <p>{{line|safe}}</p>
+            {% endfor %}
+        {% else %}
+            <p class="text-warning">No content available for the selected query!!</p>
+        {% endif %}
+    {% else %}
+    <p class="text-danger">{{error}}</p>
+    {% endif %}
+</div>
+{% endblock %}
